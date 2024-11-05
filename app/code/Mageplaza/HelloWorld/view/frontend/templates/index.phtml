@@ -1,0 +1,33 @@
+<h2>Create CRUD in Magento 2</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Form ID</th>
+            <th>Data</th>
+            <th>Created</th>
+            <th>Request Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        $posts = $block->getData('posts');
+
+        foreach ($posts as $post):
+        ?>
+            <tr>
+                <td><?php echo $post->getFormId(); ?></td>
+                <td><?php echo $post->getData("data"); ?></td>
+                <td><?php echo $post->getCreated(); ?></td>
+                <td><?php echo $post->getRequestStatus(); ?></td>
+                <td>
+
+                    <a href="<?php echo $block->getUrl('helloworld/index/edit', ['id' => $post->getId()]); ?>">Edit</a> |
+                    <a href="<?php echo $block->getUrl('helloworld/index/delete', ['id' => $post->getId()]); ?>"
+                        onclick="return confirm('Are you sure you want to delete this item?');">Delete</a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<a href="<?php echo $block->getUrl('helloworld/index/create'); ?>">Create New</a>

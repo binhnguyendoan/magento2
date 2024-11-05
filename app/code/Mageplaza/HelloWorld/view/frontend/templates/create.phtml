@@ -1,0 +1,16 @@
+<h2>Create Post</h2>
+<form action="<?php echo $block->getUrl('helloworld/index/save'); ?>" method="post">
+    <input type="hidden" name="form_id" value="" />
+
+    <label for="data">Data:</label>
+    <input type="text" name="data" required />
+
+    <label for="created">Created:</label>
+    <input type="date" name="created" required />
+
+    <label for="request_status">Request Status:</label>
+    <input type="text" name="request_status" required />
+
+    <button type="submit">Save</button>
+    <a href="<?php echo $block->getUrl('helloworld/index/index'); ?>">Cancel</a>
+</form>
