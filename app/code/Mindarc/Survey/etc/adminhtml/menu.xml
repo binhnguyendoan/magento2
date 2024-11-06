@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mindarc_Survey::survey" title="Survey" module="Mindarc_Survey" sortOrder="51"
+            resource="Mindarc_Survey::survey"
+        />
+        <add id="Mindarc_Survey::post" title="Surveys" module="Mindarc_Survey" sortOrder="10"
+            resource="Mindarc_Survey::post"
+            action="survey/post" parent="Mindarc_Survey::survey" />
+    </menu>
+</config>

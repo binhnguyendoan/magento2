@@ -85,7 +85,8 @@
             <argument name="currencyInstalled" xsi:type="string">system/currency/installed</argument>
         </arguments>
     </type>
-    <type name="Mageplaza\HelloWorld\Model\Post" />
+    <!-- <type name="Mageplaza\HelloWorld\Model\Post" /> -->
+    <type name="Mindarc\Survey\Model\Post" />
     <preference for="Magento\Framework\Api\ExtensionAttribute\JoinDataInterface"
         type="Magento\Framework\Api\ExtensionAttribute\JoinData" />
     <preference for="Magento\Framework\Api\ExtensionAttribute\JoinProcessorInterface"
