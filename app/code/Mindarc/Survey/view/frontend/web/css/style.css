@@ -1,27 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'AktivGrotesk_Bold', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
-.customer_service, .infomation, .right-column a{
+.customer_service{
+    padding-bottom: 40px;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 40px;
+}
+.right_customer_service{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.right_customer_service a{
+    display: inline-block;
+    color: #1d1d1d;
+    font-weight: bold;
+    font-family: 'AktivGrotesk_Bold', sans-serif;
+    letter-spacing: 0.08em;
+}
+.customer_service a{
+    display: inline-block;
+    color: #1d1d1d;
+    font-weight: bold;
+    font-family: 'AktivGrotesk_Bold', sans-serif;
+    letter-spacing: 0.08em;
+}
+ .infomation, .right-column a{
     color: black;
+}
+.right_heading{
+    color: #1d1d1d;
+    font-weight: bold;
+}
+.fabric1{
+    width: 140px !important;
+    height: 60px;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
     max-width: 1200px;
     margin: auto;
 }
 
 .left-column, .right-column {
-    padding: 20px;
     width: 48%;
 }
-
+.customer_service_title{
+    font-size: 30px;
+    line-height: 25px;
+    font-family: 'AktivGrotesk_Hairline', sans-serif;
+    margin-bottom: 17px;
+}
+.right_customer-img img{
+    width: 60px;
+}
+.right_customer-content{
+    margin: 0 30px;
+}
+.right_customer-content .right_link{
+    text-decoration: underline;
+}
+.customer_service_desc{
+    font-size: 14px;
+}
+.right_desc{
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 5px;
+    color: #1d1d1d;
+    font-weight: bold;
+}
 h2 {
     margin-top: 0;
     font-size: 1.5em;
@@ -43,25 +97,26 @@ h3 {
 
 .enquiry-form input, .enquiry-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 20px 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    background: #ebebeb;
 }
 
 .enquiry-form button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 16px;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 .enquiry-form button:hover {
     background-color: #0056b3;
 }
-
+.enquiry-form_desc{
+    margin-top: 10px;
+}
 .recaptcha {
     display: flex;
     align-items: center;
