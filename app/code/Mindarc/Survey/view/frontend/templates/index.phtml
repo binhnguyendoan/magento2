@@ -16,7 +16,7 @@
         <h2 class="customer_service_title">General Enquiries & Feedback</h2>
         <p>Haven't found answers in our Help Centre? Send us your enquiry and a consultant will be in contact with you.
         </p>
-        <form action="<? $block->getUrl('survey/index/index') ?>" method="post" class="enquiry-form">
+        <form action="<?php echo $block->getUrl('survey/index/submit') ?>" method="post" class="enquiry-form">
             <input type="text" name="name" placeholder="Name*" required>
             <input type="email" name="email" placeholder="Email*" required>
             <input type="tel" name="phone_number" placeholder="Phone number*" required>

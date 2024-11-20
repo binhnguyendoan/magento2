@@ -20,15 +20,7 @@ class Index extends \Magento\Framework\App\Action\Action
 
     public function execute()
     {
-        $survey = $this->_surveyFactory->create();
-        $collection = $survey->getCollection();
-        dd($collection);
-        foreach ($collection as $item) {
-            echo "<pre>";
-            print_r($item->getData());
-            echo "</pre>";
-        }
-        exit();
+
         return $this->_pageFactory->create();
     }
 }
