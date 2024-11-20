@@ -16,12 +16,12 @@
         <h2 class="customer_service_title">General Enquiries & Feedback</h2>
         <p>Haven't found answers in our Help Centre? Send us your enquiry and a consultant will be in contact with you.
         </p>
-        <form class="enquiry-form">
-            <input type="text" placeholder="Name*" required>
-            <input type="email" placeholder="Email*" required>
-            <input type="tel" placeholder="Phone number*" required>
-            <input type="text" placeholder="Subject*" required>
-            <textarea placeholder="Message" required></textarea>
+        <form action="<? $block->getUrl('survey/index/index') ?>" method="post" class="enquiry-form">
+            <input type="text" name="name" placeholder="Name*" required>
+            <input type="email" name="email" placeholder="Email*" required>
+            <input type="tel" name="phone_number" placeholder="Phone number*" required>
+            <input type="text" name="subject" placeholder="Subject*" required>
+            <textarea placeholder="Message" name="message" required></textarea>
 
             <button type="submit">SUBMIT</button>
             <p class="enquiry-form_desc">Please review our Privacy Policy which applies to all Personal Information

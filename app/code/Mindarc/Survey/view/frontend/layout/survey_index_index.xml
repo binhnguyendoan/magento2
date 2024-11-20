@@ -4,7 +4,6 @@
     <head>
         <title>Contact Us</title>
         <css src="Mindarc_Survey::css/style.css" />
-
     </head>
     <referenceContainer name="content">
         <block class="Mindarc\Survey\Block\Index" name="survey_index_index"
